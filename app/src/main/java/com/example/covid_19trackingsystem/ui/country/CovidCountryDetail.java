@@ -42,8 +42,8 @@ public class CovidCountryDetail extends AppCompatActivity {
         tvDetailCountryName.setText(covidCountry.getmCovidCountry());
         tvDetailTotalCase.setText(covidCountry.getmCases());
         tvDetailTodayCases.setText(covidCountry.getmTodayCases());
-        tvDetailTotalDeaths.setText(covidCountry.getmTodayDeaths());
-        tvDetailTodayDeaths.setText(covidCountry.getmDeaths());
+        tvDetailTotalDeaths.setText(covidCountry.getmDeaths());
+        tvDetailTodayDeaths.setText(covidCountry.getmTodayDeaths());
         tvDetailTotalRecovered.setText(covidCountry.getmRecovered());
         tvDetailTotalActive.setText(covidCountry.getmActive());
         tvDetailTotalCritical.setText(covidCountry.getmCritical());

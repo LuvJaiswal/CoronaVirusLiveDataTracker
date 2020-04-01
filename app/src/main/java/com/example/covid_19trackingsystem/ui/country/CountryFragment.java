@@ -36,6 +36,7 @@ public class CountryFragment extends Fragment {
 
    RecyclerView rvCovidCountry;
    ProgressBar progressBar;
+   TextView tvTotalCountry;
 
 
    private static final String TAG = CountryFragment.class.getSimpleName();
@@ -52,7 +53,10 @@ public class CountryFragment extends Fragment {
         //call view
         rvCovidCountry =root.findViewById(R.id.rvCovidCountry);
         progressBar = root.findViewById(R.id.progressbar_circular);
+        tvTotalCountry=root.findViewById(R.id.tvTotalCountries);
+
         rvCovidCountry.setLayoutManager(new LinearLayoutManager(getActivity()));
+
 
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(rvCovidCountry.getContext(),DividerItemDecoration.VERTICAL);
         dividerItemDecoration.setDrawable(ContextCompat.getDrawable(getContext(),R.drawable.line_divider));
@@ -106,11 +110,14 @@ public class CountryFragment extends Fragment {
                                     data.getString("country"),
                                     data.getString("cases"),
                                     data.getString("todayCases"),
+                                    data.getString("deaths"),
                                     data.getString("todayDeaths"),
                                     data.getString("recovered"),
                                     data.getString("active"),
                                     data.getString("critical")
                             ));
+
+                            tvTotalCountry.setText(jsonArray.length()+"countries");
                         } showRecyclerView();
                     } catch (JSONException e) {
                         e.printStackTrace();
