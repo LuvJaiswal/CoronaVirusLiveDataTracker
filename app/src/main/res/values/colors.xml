@@ -7,4 +7,6 @@
     <color name="white">#F8F5F5</color>
     <color name="TotalDeaths">#38D333</color>
     <color name="TotalRecovered">#3C7ABD</color>
+    <color name="titlename">#653CDD97</color>
+
 </resources>

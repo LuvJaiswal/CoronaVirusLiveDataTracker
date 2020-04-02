@@ -89,6 +89,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:id="@+id/buttonProfile"
+                                    android:onClick="information"
                                     android:background="@android:color/transparent"
                                     />
 
@@ -162,15 +163,15 @@
 
                                 <ImageView
                                     android:id="@+id/image3"
-                                    android:layout_width="50dp"
+                                    android:layout_width="100dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/profile"
+                                    android:src="@drawable/earth"
                                     android:layout_centerInParent="true"
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Profile"
+                                    android:text="Affected Countries"
                                     android:textSize="18sp"
                                     android:textStyle="bold|italic"
                                     android:layout_below="@+id/image3"
@@ -183,6 +184,8 @@
                                     android:layout_height="match_parent"
                                     android:id="@+id/btnProfile"
                                     android:background="@android:color/transparent"
+                                    android:onClick="countriesaffected"
+
                                     />
 
 
@@ -206,13 +209,13 @@
                                     android:id="@+id/image4"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/settings"
+                                    android:src="@drawable/video"
                                     android:layout_centerInParent="true"
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Settings"
+                                    android:text="Informative Video"
                                     android:textSize="18sp"
                                     android:textStyle="bold|italic"
                                     android:layout_below="@+id/image4"
@@ -225,6 +228,7 @@
                                     android:layout_height="match_parent"
                                     android:id="@+id/buttonSettings"
                                     android:background="@android:color/transparent"
+                                    android:onClick="videoPlay"
                                     />
 
 

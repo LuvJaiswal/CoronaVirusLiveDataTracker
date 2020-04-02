@@ -20,4 +20,23 @@ public class MainPageActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
+
+
+    public void countriesaffected(View view) {
+        Intent  intent = new Intent(MainPageActivity.this,CountryActivity.class);
+        startActivity(intent);
+    }
+
+    public void videoPlay(View view) {
+        Intent  intent = new Intent(MainPageActivity.this,VideoActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void information(View view) {
+        Intent  intent = new Intent(MainPageActivity.this,ImageActivity.class);
+        startActivity(intent);
+    }
 }

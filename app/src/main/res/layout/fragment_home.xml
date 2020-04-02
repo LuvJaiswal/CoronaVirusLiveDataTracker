@@ -38,7 +38,7 @@
             android:id="@+id/tvTotalConfirmed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12356"
+            android:text="0"
             android:textColor="@color/colorTotalConfirmed"
             android:textSize="28sp"
             android:textStyle="bold|italic" />
@@ -56,7 +56,7 @@
             android:id="@+id/tvTotalDeaths"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12356"
+            android:text="0"
             android:textColor="@color/TotalDeaths"
             android:textSize="28sp"
             android:textStyle="bold|italic" />
@@ -74,7 +74,7 @@
             android:id="@+id/tvTotalRecovered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12356"
+            android:text="0"
             android:textColor="@color/colorTotalConfirmed"
             android:textSize="28sp"
             android:textStyle="bold|italic" />

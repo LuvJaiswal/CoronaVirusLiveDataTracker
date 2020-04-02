@@ -117,7 +117,7 @@ public class CountryFragment extends Fragment {
                                     data.getString("critical")
                             ));
 
-                            tvTotalCountry.setText(jsonArray.length()+"countries");
+                            tvTotalCountry.setText(jsonArray.length()+" Countries :"+" Details");
                         } showRecyclerView();
                     } catch (JSONException e) {
                         e.printStackTrace();

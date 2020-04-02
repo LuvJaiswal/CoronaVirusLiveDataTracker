@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlename"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to Protect Yourself"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.Know How it Spreads"
+        android:textColor="@color/TotalRecovered"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20sp"
+        android:textSize="25dp"
+        />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/m1"
+                />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="\n
+    > There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).\n\n
+    > The best way to prevent illness is to avoid being exposed to this virus.\n\n
+    > The virus is thought to spread mainly from person-to-person.\n\n
+    > Between people who are in close contact with one another (within about 6 feet).\n\n
+    > Through respiratory droplets produced when an infected person coughs or sneezes.\n\n
+    > These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs."
+                android:textSize="20dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@android:color/white"
+         android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.Take steps to protect yourself"
+        android:textColor="@color/TotalRecovered"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20sp"
+        android:textSize="25dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txt3.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clean your hands often"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20sp"
+        android:textSize="20dp"
+        />
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:background="@drawable/m2" />
+
+         <TextView
+        android:id="@+id/txt3.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\n
+    > Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.\n\n
+    > If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry. \n\n
+    > Avoid touching your eyes, nose, and mouth with unwashed hands."
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txt3.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avoid close contact"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20sp"
+        android:textSize="20dp"
+        />
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:background="@drawable/m3"
+             />
+
+        <TextView
+            android:id="@+id/txt3.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="\n
+        > Avoid close contact with people who are sick \n\n
+        > Put distance between yourself and other people if COVID-19 is spreading in your community. This is especially important for people who are at higher risk of getting very sick.\n"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+     </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.Take steps to protect others"
+            android:textColor="@color/TotalRecovered"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20sp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/txt4.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay home if you’re sick"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20sp"
+            android:textSize="20dp"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/m4"
+                />
+
+        <TextView
+            android:id="@+id/txt4.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\nStay home if you are sick, except to get medical care"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt4.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cover coughs and sneezes"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20sp"
+            android:textSize="20dp"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/m5"
+                />
+
+        <TextView
+            android:id="@+id/txt4.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\n
+   > Cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow.\n\n
+   > Throw used tissues in the trash.\n
+   > Immediately wash your hands with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.\n\n"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt4.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wear a facemask if you are sick"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20sp"
+            android:textSize="20dp"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/m6"
+                />
+
+        <TextView
+            android:id="@+id/txt4.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\n
+> If you are sick: You should wear a facemask when you are around other people (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s office. If you are not able to wear a facemask (for example, because it causes trouble breathing), then you should do your best to cover your coughs and sneezes, and people who are caring for you should wear a facemask if they enter your room.\n\n
+> If you are NOT sick: You do not need to wear a facemask unless you are caring for someone who is sick (and they are not able to wear a facemask). Facemasks may be in short supply and they should be saved for caregivers.\n\n
+"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt4.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clean and disinfect"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20sp"
+            android:textSize="20dp"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/m7"
+                />
+
+        <TextView
+            android:id="@+id/txt4.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\n
+    > Clean AND disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.\n\n
+    > If surfaces are dirty, clean them: Use detergent or soap and water prior to disinfection.\n\n
+"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

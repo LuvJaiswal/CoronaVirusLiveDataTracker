@@ -16,4 +16,5 @@
         android:name="com.example.covid_19trackingsystem.ui.country.CountryFragment"
         android:label="@string/title_country"
         tools:layout="@layout/fragment_country" />
+
 </navigation>
