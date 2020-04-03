@@ -106,7 +106,7 @@ public class CountryFragment extends Fragment {
                         JSONArray jsonArray = new JSONArray(response);
                         for (int i = 0; i < jsonArray.length(); i++) {
                             JSONObject data = jsonArray.getJSONObject(i);
-                            covidCountries.add(new CovidCountry(
+                                    covidCountries.add(new CovidCountry(
                                     data.getString("country"),
                                     data.getString("cases"),
                                     data.getString("todayCases"),

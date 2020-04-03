@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/TotalRecovered"
     tools:context=".MainPageActivity">
 
     <ScrollView
@@ -27,12 +28,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
                     android:orientation="vertical"
+                    android:background="@color/colorTotalConfirmed"
                     android:gravity="center"
                     >
 
-                        <pl.droidsonroids.gif.GifImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:src="@drawable/globalpandemic"
                         />
 
