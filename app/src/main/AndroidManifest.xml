@@ -11,7 +11,19 @@
         android:roundIcon="@drawable/coro"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ImageActivity"></activity>
+        <service
+            android:name=".GettingDeviceTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ImageActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +33,7 @@
         </activity>
         <activity android:name=".VideoActivity" />
         <activity android:name=".CountryActivity" />
-        <activity android:name=".MainPageActivity"></activity>
+        <activity android:name=".MainPageActivity" />
         <activity android:name=".ui.country.CovidCountryDetail" />
         <activity
             android:name=".MainActivity"
