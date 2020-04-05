@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:background="@color/TotalDeaths"
         android:gravity="center"
+        android:orientation="vertical"
         android:layout_height="50dp" >
 
         <TextView
@@ -21,13 +22,36 @@
             android:textColor="@color/white"
             android:textSize="28sp" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/LinearLayoutTotalCountries"
+        >
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search"
+            >
+        </SearchView>
+
+
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/LinearLayoutTotalCountries"
         android:id="@+id/rvCovidCountry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/linearSearchLayout"
         tools:listitem ="@layout/item_list_covid_country"
         />
 

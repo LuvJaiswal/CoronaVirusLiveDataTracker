@@ -20,6 +20,10 @@ public class CovidCountryAdapter extends RecyclerView.Adapter<CovidCountryAdapte
         this.covidCountries =covidCountries;
     }
 
+    public static void add(CovidCountry country) {
+
+    }
+
     @NonNull
     @Override
     public CovidCountryAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
