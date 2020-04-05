@@ -17,7 +17,7 @@
             android:id="@+id/tvTotalCountries"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="189 Countries Details"
+            android:text="Countries Detail"
             android:textColor="@color/white"
             android:textSize="28sp" />
 

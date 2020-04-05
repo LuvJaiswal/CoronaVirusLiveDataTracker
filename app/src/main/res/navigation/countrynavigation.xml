@@ -11,7 +11,7 @@
     <fragment
         android:id="@+id/navigation_country"
         android:label="@string/title_country"
-        android:name="com.example.covid_19trackingsystem.ui.country.CountryFragment"
+        android:name="com.love.trackingsystem.ui.country.CountryFragment"
         tools:layout="@layout/fragment_country"
         />
 

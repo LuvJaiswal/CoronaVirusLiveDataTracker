@@ -1,103 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
-    android:layout_height="match_parent">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="20sp">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:background="@color/colorTotalConfirmed"
+        >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="24dp"
-            android:text="COVID-19\nGlobal Case Scenerio"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="28sp"
-            android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="COVID-19\nGlobal Case Scenerio"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
 
-        <TextView
-            android:id="@+id/tvLabelTotalConfirmed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Confirmed :"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvTotalConfirmed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textColor="@color/colorTotalConfirmed"
-            android:textSize="28sp"
-            android:textStyle="bold|italic" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:padding="20sp">
+            <TextView
+                android:id="@+id/tvLabelTotalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Confirmed :"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTotalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 0"
+                android:textSize="20dp"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textStyle="bold" />
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="20sp"
+        >
 
         <TextView
             android:id="@+id/tvLabelTotalDeaths"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Deaths :"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvTotalDeaths"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text=" 0"
+            android:textSize="20dp"
             android:textColor="@color/TotalDeaths"
-            android:textSize="28sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:background="@color/colorPrimary"
+        >
 
         <TextView
             android:id="@+id/tvLabelTotalRecovered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total Recovered :"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
+            android:text="Total Recovered:"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvTotalRecovered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text=" 0"
+            android:textSize="20dp"
             android:textColor="@color/colorTotalConfirmed"
-            android:textSize="28sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressbar"
-            android:indeterminate="true"
-            />
+    </TableRow>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:indeterminate="true"
+        android:background="@color/colorPrimary"
+        />
 
-        <TextView
-            android:id="@+id/tvLastUpdated"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Last Updated\n Mon, 23 March 2020 1:28:30 PM"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textStyle="bold|italic"
-            android:layout_marginTop="20sp"
-            />
+    <TextView
+        android:id="@+id/tvLastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Updated\n Mon, 1 Feb 2020 4:28:30 PM"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20sp"
+        android:background="@color/TotalDeaths"
+        />
 
-    </LinearLayout>
 
-</RelativeLayout>
+
+</TableLayout>
+
+

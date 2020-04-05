@@ -42,6 +42,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664020990471:android:ed50f4420bc506025c08a2",
+        "android_client_info": {
+          "package_name": "com.love.trackingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664020990471-fs45ujs5p8eibshdjt3ume8uedaoqgka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.love.trackingsystem",
+            "certificate_hash": "220a4eaf53a294191344a555727a850cd66f7280"
+          }
+        },
+        {
+          "client_id": "664020990471-piaa3qrttl8hfkmnqubn22q1euma7v69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT3tcITv5lTzZBEBvmSu52TX70FN2uWOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664020990471-piaa3qrttl8hfkmnqubn22q1euma7v69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

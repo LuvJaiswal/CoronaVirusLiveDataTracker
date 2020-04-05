@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covid_19trackingsystem">
+    package="com.love.trackingsystem">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,31 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
-            android:name=".GettingDeviceTokenService">
+            android:name="com.love.trackingsystem.GettingDeviceTokenService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="com.love.trackingsystem.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name=".ImageActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.love.trackingsystem.ImageActivity" />
+        <activity android:name="com.love.trackingsystem.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VideoActivity" />
-        <activity android:name=".CountryActivity" />
-        <activity android:name=".MainPageActivity" />
-        <activity android:name=".ui.country.CovidCountryDetail" />
+        <activity android:name="com.love.trackingsystem.VideoActivity" />
+        <activity android:name="com.love.trackingsystem.CountryActivity" />
+        <activity android:name="com.love.trackingsystem.MainPageActivity" />
+        <activity android:name="com.love.trackingsystem.ui.country.CovidCountryDetail" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.love.trackingsystem.MainActivity"
             android:label="@string/app_name" />
     </application>
 
