@@ -2,7 +2,11 @@ package com.love.trackingsystem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class CountryActivity extends AppCompatActivity {
 
@@ -18,6 +22,17 @@ public class CountryActivity extends AppCompatActivity {
 //
 //
 //        NavigationUI.setupWithNavController(navView, navController);
+
+        checkConnection();
+    }
+
+    public void checkConnection(){
+        ConnectivityManager manager = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = manager.getActiveNetworkInfo();
+        if (null==activeNetwork){
+            Toast.makeText(this, "No internet Connection", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
 

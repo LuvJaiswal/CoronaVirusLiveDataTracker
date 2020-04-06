@@ -1,10 +1,14 @@
 package com.love.trackingsystem;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.love.trackingsystem.ui.country.CovidCountry;
@@ -28,11 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,10 +48,18 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
+        checkConnection();
+    }
 
-
-
+    public void checkConnection(){
+        ConnectivityManager manager = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = manager.getActiveNetworkInfo();
+        if (null == activeNetwork){
+            Toast.makeText(this, "No internet Connection", Toast.LENGTH_SHORT).show();
+        }
 
     }
+
+
 
 }
